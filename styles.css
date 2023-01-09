@@ -3,24 +3,25 @@ body {
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 main {
-    margin: 200px auto;
     display: flex;
-    justify-content: center;
 }
 
-#sedan {
+.sedan {
     background: hsl(31, 77%, 52%);
     border-radius: 10px 0 0 10px;
 }
 
-#suvs {
+.suvs {
     background: hsl(184, 100%, 22%);
 }
 
-#luxury {
+.luxury {
     background: hsl(179, 100%, 13%);
     border-radius: 0 10px 10px 0;
 }
@@ -39,7 +40,7 @@ div {
     width: 70px;
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
     font-family: Big Shoulders Display;
     font-size: 3rem;
@@ -63,6 +64,10 @@ button {
     align-items: center;
     font-weight: bolder;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 button:hover {
@@ -91,11 +96,11 @@ button:hover {
         align-items: center;
     }
 
-    #sedan {
+    .sedan {
         border-radius: 10px 10px 0 0;
     }
     
-    #luxury {
+    .luxury {
         border-radius: 0 0 10px 10px;
     }
 
